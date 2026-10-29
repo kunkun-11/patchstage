@@ -1,0 +1,21 @@
+--- a/emitter.js
++++ b/emitter.js
+@@ -1,5 +1,5 @@
+ // Adapted from mitt 3.0.1; MIT, Copyright (c) 2021 Jason Miller.
+-// Teaching change: dispatch lists are intentionally not copied.
++// Each dispatch snapshots its listeners, as in the pinned source.
+ function createEmitter() {
+   const all = new Map();
+   return {
+@@ -17,9 +17,9 @@
+     },
+     emit(type, payload) {
+       const handlers = all.get(type);
+-      if (handlers) handlers.forEach(fn => fn(payload));
++      if (handlers) handlers.slice().forEach(fn => fn(payload));
+       const wildcards = all.get('*');
+-      if (wildcards) wildcards.forEach(fn => fn(type, payload));
++      if (wildcards) wildcards.slice().forEach(fn => fn(type, payload));
+     }
+   };
+ }
