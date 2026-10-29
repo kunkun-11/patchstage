@@ -1,6 +1,6 @@
 # Launch one useful example
 
-Repository title: **PatchStage — Put the result next to the code change.**
+Repository title: **PatchStage — Show the change. Explain the payoff.**
 
 First post title: **Why did listener B disappear? Show the fix with real screenshots and a diff.**
 
@@ -14,7 +14,7 @@ The first release has one complete story: use PatchStage to present Tiny Source 
 2. Export JSON, reopen it, and check that the selected hunk, text, screenshots, and card settings are preserved.
 3. Verify that the example screenshots reproduce the stated Tiny Source Lab behavior and that the card's source link works.
 4. Check the page and card at a phone viewport and with Chinese text. Use ALT describing the visible result, including any crop that changes its meaning.
-5. Verify both repository links and the live URLs below. The expected PatchStage Pages URL is **pending verification until deployment succeeds**.
+5. Verify both repository links and the live URLs below. PatchStage Pages was deployed and its PNG/project exports verified on **29 October 2026**.
 
 ## Where the first post belongs
 
